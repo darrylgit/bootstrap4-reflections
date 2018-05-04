@@ -12,14 +12,14 @@ Normal text: `<p class="font-weight-normal"></p>`
 Italic text: `<p class="font-italic"></p>`  
 
 Text transforms:
-```
+```html
 <p class="text-lowercase"></p>
 <p class="text-uppercase"></p>
 <p class="text-capitalize"></p>
 ```
 
 A right-aligned blockquote with a footer:
-```
+```html
 <blockquote class="blockquote text-right">
   <p> Quote quote quote </p>
   <footer class="blockquote-footer"> Someone famous in <cite
@@ -28,7 +28,7 @@ A right-aligned blockquote with a footer:
 ```
 
 Unstyle a list:
-```
+```html
 <ul class="list unstyled">
   <li> To remove </li>
   <li> bullets </li>
@@ -37,7 +37,7 @@ Unstyle a list:
 ```
 
 Inline lists:
-```
+```html
 <ul class="list-inline">
   <li class="list-inline-item"> Lorem ipsum </li>
   <li class="list-inline-item"> Lorem ipsum </li>
