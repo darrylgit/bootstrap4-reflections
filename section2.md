@@ -21,7 +21,7 @@ Text transforms:
 A right-aligned blockquote with a footer:
 ```
 <blockquote class="blockquote text-right">
-  <p>_Quote quote quote_</p>
+  <p> Quote quote quote </p>
   <footer class="blockquote-footer"> Someone famous in <cite
   title="Source Title"> Source Title </cite></footer>
 </blockquote>
