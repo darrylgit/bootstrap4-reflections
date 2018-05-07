@@ -76,7 +76,7 @@ Responsive alignments:
 ```
 
 
-Vertical alignment:
+Vertical alignment:  
 ```html
 <span class="align-baseline">baseline</span>
 <span class="align-top">top</span>
@@ -87,20 +87,20 @@ Vertical alignment:
 ```
 
 
-Turn block into inline:
+Turn block into inline:  
 ```html
 <h1 class="d-inline">Hello</h1>
 <h1 class="d-inline">Goodbye</h1>
 ```
 
 
-Turn inline into block:
+Turn inline into block:  
 ```html
 <span class="d-block">Block</span>
 ```
 
 
-Turn block into inline block:
+Turn block into inline block:  
 ```html
 <div class="d-inline-block">
   <h3>Hello</h3>
@@ -115,7 +115,7 @@ Turn block into inline block:
 
 ### _9.Floats and Positions_
 
-Basic floats:
+Basic floats:  
 ```html
 <div class="float-left">Float left</div><br>
 <div class="float-right">Float right</div><br>
@@ -123,7 +123,7 @@ Basic floats:
 ```
 
 
-Responsive floats:
+Responsive floats:  
 ```html
 <div class="float-sm-right">Float right on small or wider</div><br>
 <div class="float-md-right">Float right on medium or wider</div><br>
@@ -142,7 +142,7 @@ Responsive floats:
 ```
 
 
-Clearfix:
+Clearfix:  
 ```html
 <div class="clearfix">
     <button class="float-left">Float Left</button>
@@ -151,7 +151,7 @@ Clearfix:
 ```
 
 
-Fixed and stickies:
+Fixed and stickies:  
 ```html
 <h3 class="fixed-top">Fixed Top</h3>
 <h3 class="sticky-top">Sticky</h3>
