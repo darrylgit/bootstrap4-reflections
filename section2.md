@@ -113,7 +113,7 @@ Turn block into inline block:
 ```
 
 
-### _9.Floats and Positions_
+### _9. Floats and Positions_
 
 Basic floats:  
 ```html
@@ -158,3 +158,37 @@ Fixed and stickies:
 <h3 class="fixed-bottom">Fixed Bottom</h3>
 ```
 _Note: Fixed-top text is fixed to the top of the page at all times. Sticky-top sticks to the top once it hits the top of the page, and unsticks if you scroll up past its original position._
+
+### _10. Colors and Background_
+
+Text colors:
+```html
+<p class="text-primary">Text Primary Color</p>
+<p class="text-secondary">Text Secondary Color</p>
+<p class="text success">Text Success Color</p>
+<p class="text-info">Text Info Color</p>
+<p class="text-warning">Text Warning Color</p>
+<p class="text-danger">Text Danger Color</p>
+<p class="text-light">Text Light Color</p>
+<p class="text-dark">Text Dark Color</p>
+<p class="text-white">Text White Color</p>
+```
+
+Background colors:
+```html
+<div class="bg-primary">Background Primary Color</div>
+<div class="bg-secondary">Background Secondary Color</div>
+<div class="bg-success">Background Success Color</div>
+<div class="bg-info">Background Info Color</div>
+<div class="bg-warning">Background Warning Color</div>
+<div class="bg-danger">Background Danger Color</div>
+<div class="bg-light">Background Light Color</div>
+<div class="bg-dark">Background Dark Color</div>
+<div class="bg-white">Background White Color</div>
+```
+
+Eye of a newt, hair of a steer,
+Make this element disappear:
+```html
+<p class="invisible">Hello</p>
+```
