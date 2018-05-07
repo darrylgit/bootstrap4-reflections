@@ -187,8 +187,106 @@ Background colors:
 <div class="bg-white">Background White Color</div>
 ```
 
-Eye of a newt, hair of a steer,
+Eye of a newt, hair of a steer,  
 Make this element disappear:
 ```html
 <p class="invisible">Hello</p>
+```
+
+### _11. Spacing_
+
+_Note: the margin and padding classes use the notation (property)(sides)-(size), with size being the multiple of a spacer set by Bootstrap_
+
+Sides values:
+* _t_: top
+* _b_: bottom
+* _l_: left
+* _r_: right
+* _x_: both left and right
+* _y_: both top and bottom
+* If no value is specified, all sides are selected
+
+Margin bottom:
+```html
+<h1 class="mb-0">Margin Bottom 0</h1>
+<h1 class="mb-1">Margin Bottom 1</h1>
+<h1 class="mb-2">Margin Bottom 2</h1>
+<h1 class="mb-3">Margin Bottom 3</h1>
+<h1 class="mb-4">Margin Bottom 4</h1>
+<h1 class="mb-5">Margin Bottom 5</h1>
+```
+
+Margin top:
+```html
+<h1 class="mt-0">Margin Top 0</h1>
+<h1 class="mt-1">Margin Top 1</h1>
+<h1 class="mt-2">Margin Top 2</h1>
+<h1 class="mt-3">Margin Top 3</h1>
+<h1 class="mt-4">Margin Top 4</h1>
+<h1 class="mt-5">Margin Top 5</h1>
+```
+
+Left and right margins:
+```html
+<p><span class="mr-5">Margin Right 5</span> dolor sit amet, <span class="ml-3">Margin Left 3 </span> elit. Voluptatum, optio.</p>
+
+<p>Lorem ipsum<span class="mx-5">Margin Left & Right 5</span>, consectetur elit. Voluptatum, optio.</p>
+```
+
+Top and bottom margins:
+```html
+<p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+<p class="my-5">Margin Top & Bottom 5</p>
+<p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+```
+
+Margin all sides:
+```html
+<p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+<p class="m-5">Margin All Sides 5</p>
+<p>Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+```
+
+Padding bottom:
+```html
+<h1 class="pb-0">Padding Bottom 0</h1>
+<h1 class="pb-1">Padding Bottom 1</h1>
+<h1 class="pb-2">Padding Bottom 2</h1>
+<h1 class="pb-3">Padding Bottom 3</h1>
+<h1 class="pb-4">Padding Bottom 4</h1>
+<h1 class="pb-5">Padding Bottom 5</h1>
+```
+
+Padding top:
+```html
+<h1 class="pt-0">Padding Top 0</h1>
+<h1 class="pt-1">Padding Top 1</h1>
+<h1 class="pt-2">Padding Top 2</h1>
+<h1 class="pt-3">Padding Top 3</h1>
+<h1 class="pt-4">Padding Top 4</h1>
+<h1 class="pt-5">Padding Top 5</h1>
+```
+
+Left and right padding:
+```html
+<p><span class="pr-5">Padding Right 5</span> dolor sit amet, <span class="pl-3">Padding Left 3 </span> elit. Voluptatum, optio.</p>
+
+<p>Lorem ipsum<span class="px-5">Padding Left & Right 5</span>, consectetur elit. Voluptatum, optio.</p>
+```
+
+Top and bottom padding:
+```html
+<p class="py-5">Padding Top & Bottom 5</p>
+```
+
+Padding all sides:
+```html
+<p class="p-5">Padding All Sides 5</p>
+```
+
+Center align:
+```html
+<div class="mx-auto" style="width: 200px;">
+  Center Align
+</div>
 ```
