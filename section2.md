@@ -195,15 +195,15 @@ Make this element disappear:
 
 ### _11. Spacing_
 
-_Note: the margin and padding classes use the notation (property)(sides)-(size), with size being the multiple of a spacer set by Bootstrap_
+_Note: the margin and padding classes use the notation (property)(sides)-(size), with size being the multiple of a spacer set by Bootstrap_.
 
 Sides values:
-* _t_: top
-* _b_: bottom
-* _l_: left
-* _r_: right
-* _x_: both left and right
-* _y_: both top and bottom
+* _t_ : top
+* _b_ : bottom
+* _l_ : left
+* _r_ : right
+* _x_ : both left and right
+* _y_ : both top and bottom
 * If no value is specified, all sides are selected
 
 Margin bottom:
