@@ -56,6 +56,7 @@ Self-explanatory basic alignments:
 <p class="text-right">Text aligned right</p>
 ```
 
+
 Responsive alignments:
 ```html
 <p class="text-sm-right">Right aligned on small or larger</p>
@@ -74,6 +75,7 @@ Responsive alignments:
 <p class="text-xl-center">Center aligned text on extra large or wider</p>
 ```
 
+
 Vertical alignment:
 ```html
 <span class="align-baseline">baseline</span>
@@ -84,16 +86,19 @@ Vertical alignment:
 <span class="align-text-bottom">text-bottom</span>
 ```
 
+
 Turn block into inline:
 ```html
 <h1 class="d-inline">Hello</h1>
 <h1 class="d-inline">Goodbye</h1>
 ```
 
+
 Turn inline into block:
 ```html
 <span class="d-block">Block</span>
 ```
+
 
 Turn block into inline block:
 ```html
@@ -106,3 +111,50 @@ Turn block into inline block:
   This is inline
 </div>
 ```
+
+
+### _9.Floats and Positions_
+
+Basic floats:
+```html
+<div class="float-left">Float left</div><br>
+<div class="float-right">Float right</div><br>
+<div class="float-none">Float none</div><br>
+```
+
+
+Responsive floats:
+```html
+<div class="float-sm-right">Float right on small or wider</div><br>
+<div class="float-md-right">Float right on medium or wider</div><br>
+<div class="float-lg-right">Float right on large or wider</div><br>
+<div class="float-xl-right">Float right on extra large or wider</div><br>
+
+<div class="float-sm-left">Float left on small or wider</div><br>
+<div class="float-md-left">Float left on medium or wider</div><br>
+<div class="float-lg-left">Float left on large or wider</div><br>
+<div class="float-xl-left">Float left on extra large or wider</div><br>
+
+<div class="float-sm-none">Float none on small or wider</div><br>
+<div class="float-md-none">Float none on medium or wider</div><br>
+<div class="float-lg-none">Float none on large or wider</div><br>
+<div class="float-xl-none">Float none on extra large or wider</div><br>
+```
+
+
+Clearfix:
+```html
+<div class="clearfix">
+    <button class="float-left">Float Left</button>
+    <button class="float-right">Float Right</button>
+</div>
+```
+
+
+Fixed and stickies:
+```html
+<h3 class="fixed-top">Fixed Top</h3>
+<h3 class="sticky-top">Sticky</h3>
+<h3 class="fixed-bottom">Fixed Bottom</h3>
+```
+_Note: Fixed-top text is fixed to the top of the page at all times. Sticky-top sticks to the top once it hits the top of the page, and unsticks if you scroll up past its original position._
