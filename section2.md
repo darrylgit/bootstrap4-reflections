@@ -290,3 +290,35 @@ Center align:
   Center Align
 </div>
 ```
+
+### _11. Sizing and Borders_
+
+Width classes:
+```html
+<div class="w-25">Width 25% of container</div>
+<div class="w-50">Width 50%</div>
+<div class="w-75">Width 75%</div>
+<div class="w-100">Width 100%</div>
+```
+Height classes:
+```html
+<div class="h-25">Height 25%</div>
+<div class="h-50">Height 50%</div>
+<div class="h-75">Height 75%</div>
+<div class="h-100">Height 100%</div>
+```
+_Note: While you might think you can swap out other values for the percentage, like w-30 for 30% width or h-60 for 60% height, you can't. Only 25, 50, 75, and 100 are permitted within Bootstrap_.
+
+Border madness:
+```html
+<div class="bg-light border">Regular</div>
+<div class="bg-light border border-primary">Primary</div>
+<div class="bg-light border border-secondary rounded">Secondary with rounded borders</div>
+<div class="bg-light border border-success rounded-top">Success with rounded borders only on top</div>
+<div class="bg-light border border-info rounded-bottom">Info with rounded borders only on the bottom</div>
+<div class="bg-light border border-warning rounded-left">Warning with rounded borders only on the left</div>
+<div class="bg-light border border-danger border-top-0">Danger with no top border</div>
+<div class="bg-light border border-light border-bottom-0">Light with no bottom border</div>
+<div class="bg-light border border-dark border-right-0">Dark with no right border</div>
+<div class="bg-light border border-white border left-0">White with no left border</div>
+```
