@@ -314,11 +314,30 @@ Border madness:
 <div class="bg-light border">Regular</div>
 <div class="bg-light border border-primary">Primary</div>
 <div class="bg-light border border-secondary rounded">Secondary with rounded borders</div>
-<div class="bg-light border border-success rounded-top">Success with rounded borders only on top</div>
-<div class="bg-light border border-info rounded-bottom">Info with rounded borders only on the bottom</div>
-<div class="bg-light border border-warning rounded-left">Warning with rounded borders only on the left</div>
+<div class="bg-light border border-success rounded-top">Success with borders rounded only on top</div>
+<div class="bg-light border border-info rounded-bottom">Info with borders rounded only on the bottom</div>
+<div class="bg-light border border-warning rounded-left">Warning with borders rounded only on the left</div>
 <div class="bg-light border border-danger border-top-0">Danger with no top border</div>
 <div class="bg-light border border-light border-bottom-0">Light with no bottom border</div>
 <div class="bg-light border border-dark border-right-0">Dark with no right border</div>
-<div class="bg-light border border-white border left-0">White with no left border</div>
+<div class="bg-light border border-white border-left-0">White with no left border</div>
+```
+
+### _12. CSS Breakpoints_
+
+```css
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
 ```
