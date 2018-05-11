@@ -149,10 +149,11 @@ Simple navbar:
 </nav>
 ```
 _Explanation of classes_:  
-* _bg-light_: Can be swapped out for any bootstrap colors, like _bg-primary_, _bg-danger_, and _bg-success_.
+* _bg-light_: Can be swapped out for any bootstrap color, (eg. _bg-primary_, _bg-danger_, and _bg-success_).
 * _navbar-light_: Should correspond to the background. _navbar-light_ will make your text readable on a light background, and _navbar-dark_ will make your text readable on a dark background.
 * _navbar-brand_: The name of the website or page, separate from clickable nav items
 * _navbar-expand-sm_: When the screen width hits the sm (small) mark, the nav items responsively lose their inline properties and become a vertical list to save space.
+
 
 But what if you don't want a vertical list? What about a responsive toggle?
 ```html
@@ -285,11 +286,12 @@ Highlight active elements with _nav-pills_:
 </ul>
 ```
 
-_<ul>_ positioning classes for navs:
+_ul_ positioning classes for navs:   
 * _justify-content-center_: Center align
 * _justify-content-end_: Right align
 * _flex-column_: A column
 * _nav-fill_: Makes the nav a block and gives each object an equal fill
+
 
 Nav with dropdown:
 ```html
