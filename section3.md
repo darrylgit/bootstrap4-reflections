@@ -290,7 +290,7 @@ _ul_ positioning classes for navs:
 * _justify-content-center_: Center align
 * _justify-content-end_: Right align
 * _flex-column_: A column
-* _nav-fill_: Makes the nav a block and gives each object an equal fill
+* _nav-fill_: Makes the nav a block and gives each item an equal fill
 
 
 Nav with dropdown:
@@ -318,4 +318,72 @@ Nav with dropdown:
         <a class="nav-link" href="#">Link 4</a>
     </li>
 </ul>
+```
+
+### _17. List Groups and Badges_
+
+Basic list group:
+```html
+<ul class="list-group">
+    <li class="list-group-item">My List Item One</li>
+    <li class="list-group-item">My List Item Two</li>
+    <li class="list-group-item">My List Item Three</li>
+    <li class="list-group-item">My List Item Four</li>
+    <li class="list-group-item">My List Item Five</li>
+</ul>
+```
+
+List group with hoverable links:
+```html
+<ul class="list-group">
+    <a class="list-group-item list-group-item-action" href="#">My List Item One</a>
+    <a class="list-group-item list-group-item-action" href="#">My List Item Two</a>
+    <a class="list-group-item list-group-item-action" href="#">My List Item Three</a>
+    <a class="list-group-item list-group-item-action" href="#">My List Item Four</a>
+    <a class="list-group-item list-group-item-action" href="#">My List Item Five</a>
+</ul>
+```
+
+Pretty colors:
+```html
+<ul class="list-group">
+    <li class="list-group-item">Regular List Item</li>
+    <li class="list-group-item list-group-item-primary">Primary List Item</li>
+    <li class="list-group-item list-group-item-secondary">Secondary List Item</li>
+    <li class="list-group-item list-group-item-success">Success List Item</li>
+    <li class="list-group-item list-group-item-info">Info List Item</li>
+    <li class="list-group-item list-group-item-warning">Warning List Item</li>
+    <li class="list-group-item list-group-item-danger">Danger List Item</li>
+    <li class="list-group-item list-group-item-light">Light List Item</li>
+    <li class="list-group-item list-group-item-dark">Dark List Item</li>
+</ul>
+```
+
+A Javascript list widget _(note: requires JQuery and Popper.js)_:
+```html
+<div class="row mb-5">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" id="list-home-list"
+        href="#list-home" data-toggle="list">Home</a>
+        <a class="list-group-item list-group-item-action" id="list-about-list"
+        href="#list-about" data-toggle="list">About</a>
+        <a class="list-group-item list-group-item-action" id="list-services-list"
+        href="#list-services" data-toggle="list">Services</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel">
+        Home Content...
+      </div>
+      <div class="tab-pane fade" id="list-about" role="tabpanel">
+        About Content...
+      </div>
+      <div class="tab-pane fade" id="list-services" role="tabpanel">
+        Services Content...
+      </div>
+    </div>
+  </div>
+</div>
 ```
