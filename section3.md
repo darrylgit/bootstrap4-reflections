@@ -415,3 +415,133 @@ Breadcrumbs:
     <li class="breadcrumb-item active">Brad</li>
 </ol>
 ```
+
+### _18. Forms & Input_
+
+Form madness:
+```html
+<form>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control form-control-sm" placeholder="Enter name">
+    </div>
+    <div>
+        <label for="email">Email address</label>
+        <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter email">
+        <small class="form-text text-muted">Your email will not be shared with anyone</small>
+    </div>
+    <div class="form-group">
+         <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Password" readonly>
+    </div>
+    <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" class="form-control">
+        <option>Male</option>
+        <option>Female</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" class="form-control" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="file">File input</label>
+        <input type="file" id="file" class="form-control-file">
+        <small id="fileHelp" class="form-text text-muted">Max 3mb size</small>
+    </div>
+```
+Explanation of classes:  
+* _form-group_: Adds margins
+* _form-control_: Makes the input a block-level element, rounds corners
+* _form-control-file_: Specifically for file inputs
+* _form-text_: Adjusts margins
+
+
+Form checks:
+```html
+<fieldset class="form-group">
+    <legend>What are you using this service for?</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" value="option1" class="form-check-input" checked>
+          Personal
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" value="option1" class="form-check-input" checked>
+          Commercial Use
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" value="option1" class="form-check-input" checked>
+          Testing
+      </label>
+    </div>
+</fieldset>
+<div class="form-check">
+    <label class="form-check-label">
+    <input type="checkbox" class="form-check-input">
+        Sign up for newsletter
+    </label>
+</div>
+<button class="btn btn-primary" type="submit">Submit</button>
+</form>
+```
+
+Inline forms:
+```html
+<form class="form-inline">
+    <input type="text" class="form-control mr-2" id="username" placeholder="Enter username">
+    <input type="text" class="form-control mr-2" id="password" placeholder="Password">
+    <div class="form-check">
+        <label class="form-check-label mr-2">
+            <input type="checkbox" class="form-check-input"> Remember me
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-secondary">Submit</button>
+</form>
+```
+
+Form row:
+```html
+<form>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+```
+
+Validation:
+```html
+<div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" id="username" class="form-control is-valid">
+</div>
+<div class="form-group">
+    <label for="password">Password</label>
+    <input type="text" id="password" class="form-control is-invalid">
+    <div class="invalid-feedback">
+      Password not strong enough
+    </div>
+</div>
+<div class="form-group">
+    <label for="password2">Confirm Password</label>
+    <input type="text" id="password2" class="form-control is-invalid">
+    <div class="invalid-feedback">
+      Password does not match
+    </div>
+</div>
+```
+Explanation of classes:  
+* _is-valid_: Makes border green
+* _is-invalid_: Makes border red
+* _invalid-feedback_: Makes text red
