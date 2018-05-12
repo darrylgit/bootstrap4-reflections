@@ -545,3 +545,66 @@ Explanation of classes:
 * _is-valid_: Makes border green
 * _is-invalid_: Makes border red
 * _invalid-feedback_: Makes text red
+
+### _19. Input Groups & Addons_
+
+Simple input groups with addons:
+```html
+<div class="input-group">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control" placeholder="Username">
+</div>
+<br>
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="Email address">
+    <span class="input-group-addon">@something.com</span>
+</div>
+<br>
+<label for="profile-url">Choose profile URL</label>
+<div class="input-group">
+    <span class="input-group-addon">https://something.com/member/</span>
+    <input type="text" class="forn-control" id="profile-url">
+</div>
+<br>
+<div class="input-group">
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control">
+    <span class="input-group-addon">.00</span>
+</div>
+```
+
+Large input group:
+```html
+<div class="input-group input-group-lg">
+    <span class="input-group-addon">@</span>
+    <input type="text" placeholder="Username" class="form-control">
+</div>
+```
+
+Input groups with checks:
+```html
+<div class="input-group">
+    <span  class="input-group-addon">
+        <input type="checkbox">
+    </span>
+    <input type="text" class="form-control">
+</div>
+<br>
+<div class="input-group">
+    <span class="input-group-addon">
+        <input type="radio">
+    </span>
+    <span class="input-group-addon">$5.00</span>
+    <input type="text" class="form-control">
+</div>
+```
+
+Input group with button:
+```html
+<div class=input-group>
+   <input type="text" class="form-control" placeholder="Search for...">
+   <span class="input-group-btn">
+       <button class="btn btn-primary" type="button">Search</button>
+   </span>
+</div>
+```
