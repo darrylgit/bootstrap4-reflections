@@ -387,3 +387,31 @@ A Javascript list widget _(note: requires JQuery and Popper.js)_:
   </div>
 </div>
 ```
+
+Badges:
+```html
+<ul class="list-group">
+    <li class="list-group-item">My List Item One</li>
+    <li class="list-group-item d-flex justify-content-between
+    align-items center">My List Item Two <span class="badge badge-primary">30</span></li>
+    <li class="list-group-item">My List Item Three</li>
+    <li class="list-group-item">My List Item Four</li>
+    <li class="list-group-item">My List Item Five</li>
+</ul>
+```
+
+Breadcrumbs:
+```html
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active">Home</li>
+</ol>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active">Users</li>
+</ol>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Users</a></li>
+    <li class="breadcrumb-item active">Brad</li>
+</ol>
+```
