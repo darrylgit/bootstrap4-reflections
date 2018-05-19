@@ -608,3 +608,181 @@ Input group with button:
    </span>
 </div>
 ```
+
+###_20. Alerts and Progress Bars_
+
+Alerts:
+```html
+<div class="alert alert-primary">
+  <strong>Primary</strong> Blog post added
+</div>
+
+<div class="alert alert-secondary">
+  <strong>Secondary</strong> Blog post added
+</div>
+
+<div class="alert alert-success">
+    <strong>Success</strong> Blog post added
+</div>
+
+<div class="alert alert-danger">
+    <strong>Danger</strong> Please check the log files
+</div>
+
+<div class="alert alert-info">
+    <strong>Info</strong> You have a new message
+</div>
+
+<div class="alert alert-warning">
+    <strong>Warning</strong> Please check the log files
+</div>
+
+<div class="alert alert-light">
+    <strong>Light</strong> Please check the log files <a class="alert-link">Read more</a>
+</div>
+
+<div class="alert alert-dark">
+    <strong>Dark</strong> Please check the log files
+</div>
+
+<!-- DISMISSABLE ALERT -->
+<div class="alert alert-success alert-dismissable fade show">
+    <button class="close" data-dismiss="alert" type="button">
+        <span>&times;</span>
+    </button>
+    <strong>Dismissable</strong> Blog post added
+</div>
+```
+
+Progress bars:
+```html
+<div class="progress">
+    <div class="progress-bar" style="width:35%;"></div>
+</div>
+<br>
+<div class="progress">
+    <div class="progress-bar" style="width:35%;">35%</div>
+</div>
+<br>
+<div class="progress">
+    <div class="progress-bar bg-success" style="width:45%;"></div>
+</div>
+<br>
+<div class="progress">
+    <div class="progress-bar bg-info" style="width:55%;"></div>
+</div>
+<br>
+<div class="progress">
+    <div class="progress-bar bg-warning" style="width:85%;"></div>
+</div>
+<br>
+<div class="progress">
+    <div class="progress-bar bg-danger progress-bar-striped" style="width:85%;"></div>
+</div>
+<br>
+<div class="progress">
+    <div class="progress-bar bg-danger progress-bar-striped
+    progress-bar-animated" style="width:85%;"></div>
+</div>
+```
+
+###_21. Tables and Pagination_
+
+Tables:
+```html
+<!-- BASIC TABLE -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- INVERSE (dark) TABLE -->
+<table class="table table-inverse">
+
+
+<!-- TABLE HEAD INVERSE (dark) -->
+<table class="table">
+    <thead class="thead-inverse">
+
+
+<!-- STRIPED TABLE -->
+<table class="table table-striped">
+
+
+<!-- BORDERED TABLE -->
+<table class="table table-bordered">
+
+
+<!-- HOVERABLE -->
+<table class="table table-hover">
+
+
+<!-- SMALL TABLE -->
+<table class="table table-sm">
+```
+
+Pagination:
+```html
+<!-- BASIC -->
+<nav>
+    <ul class="pagination">
+        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>
+
+<!-- PAGINATION CENTERED -->
+<nav>
+    <ul class="pagination justify-content-center">
+    </ul>
+</nav>
+
+
+<!-- PAGINATION RIGHT -->
+<nav>
+    <ul class="pagination justify-content-end">
+    </ul>
+</nav>
+
+<!-- PAGINATION LARGE -->
+<nav>
+    <ul class="pagination pagination-lg">
+    </ul>
+</nav>
+
+
+<!-- PAGINATION SMALL -->
+<nav>
+    <ul class="pagination pagination-sm">
+    </ul>
+</nav>
+```
