@@ -1024,3 +1024,104 @@ Pagination:
     </div>
 </div>
 ```
+
+### _23. Media Objects_
+```html
+<!-- MEDIA OBJECT -->
+<div class="media">
+    <img class="d-flex mr-3" src="img/image4.jpg">
+    <div class="media-body">
+        <h5 class="mt-0">Media heading</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+        ante sollicitudin.
+    </div>
+</div>
+
+<br><br>
+
+<!-- NESTING MEDIA OBJECTS -->
+<div class="media">
+    <img class="d-flex mr-3" src="img/image4.jpg">
+    <div class="media-body">
+        <h5>Media heading</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+        ante sollicitudin.
+
+        <div class="media mt-3">
+        <a class="d-flex pr-3" href="#">
+            <img src="img/image4.jpg">
+        </a>
+        <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+            ante sollicitudin.
+        </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<!-- TOP ALIGNED (DEFAULT) -->
+<div class="media">
+    <img class="d-flex mr-3 align-self-start" src="img/image4.jpg">
+    <div class="media-body">
+        <h5>Top aligned media</h5>
+        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+          ante sollicitudin.</p>
+    </div>
+</div>
+
+<br><br>
+
+<!-- CENTER ALIGNED -->
+<div class="media">
+    <img class="d-flex mr-3 align-self-center" src="img/image4.jpg">
+    <div class="media-body">
+        <h5>Center aligned media</h5>
+        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+          ante sollicitudin.</p>
+    </div>
+</div>
+
+<br><br>
+
+<!-- BOTTOM ALIGNED -->
+<div class="media">
+    <img class="d-flex align-self-end mr-3" src="img/image4.jpg">
+    <div class="media-body">
+        <h5>Bottom aligned media</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+        ante sollicitudin.
+      </div>
+</div>
+
+<br><br>
+
+<!-- MEDIA LIST -->
+<ul class="list-unstyled">
+    <li class="media mt-1">
+        <img class="d-flex mr-3" src="img/image4.jpg">
+        <div class="media-body">
+        <h5>List based media object</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+        ante sollicitudin.
+        </div>
+    </li>
+    <li class="media mt-1">
+        <img class="d-flex mr-3" src="img/image4.jpg">
+        <div class="media-body">
+        <h5>List based media object</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+        ante sollicitudin.
+        </div>
+    </li>
+    <li class="media mt-1">
+        <img class="d-flex mr-3" src="img/image4.jpg">
+        <div class="media-body">
+        <h5>List based media object</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+        ante sollicitudin.
+    </li>
+</ul>
+```
