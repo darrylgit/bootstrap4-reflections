@@ -199,7 +199,7 @@
 </div>
 ```
 
-_Column wrapping_: if the sum of the column values is greater than 12, they automatically wrap
+_Column wrapping_: if the sum of the column values is greater than 12, they automatically wrap  
 _no-gutters_: gets rid of the space between columns
 ```html
 <div class="row no-gutters">
