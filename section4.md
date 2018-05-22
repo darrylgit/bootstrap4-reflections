@@ -219,4 +219,153 @@ _no-gutters_: gets rid of the space between columns
       </div>
     </div>
 </div>
+```
+
+### _27. Flexbox_
+```html
+<!-- FLEX ROW & FLEX ITEMS -->
+<div class="d-flex flex-row row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
 </div>
+
+<br><br>
+
+<!-- FLEX ROW REVERSE -->
+<div class="d-flex flex-row-reverse row-hl">
+  <div class="p-4 item-hl">Flex Item starting from the right</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- JUSTIFY CONTENT -->
+<!-- Justify left (default)-->
+<div class="d-flex flex-row justify-content-start row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- Justify center -->
+<div class="d-flex flex-row justify-content-center row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- Justify right -->
+<div class="d-flex flex-row justify-content-end row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- Justify with space around items -->
+<div class="d-flex flex-row justify-content-around row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- Justify with space between items-->
+<div class="d-flex flex-row justify-content-between row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- FLEX CONTAINER / FLEX COLUMN -->
+<div class="d-flex flex-column row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<div class="d-flex flex-column reverse row-hl">
+  <div class="p-4 item-hl">Flex Item from the bottom</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- VERTICAL ALIGN ITEMS -->
+<div class="d-flex flex-row align-items-start row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- VERTICAL ALIGN ITEMS -->
+<div class="d-flex flex-row align-items-center row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- VERTICAL ALIGN ITEMS -->
+<div class="d-flex flex-row align-items-end row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- VERTICAL ALIGN ITEMS -->
+<div class="d-flex flex-row align-items-baseline row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- VERTICAL ALIGN ITEMS -->
+<div class="d-flex flex-row align-items-stretch row-hl">
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+  <div class="p-4 item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- ALIGN SELF -->
+<div class="d-flex flew-row row-hl">
+  <div class="p-4 align-self-start item-hl">Flex Item</div>
+  <div class="p-4 align-self-center item-hl">Flex Item</div>
+  <div class="p-4 align-self-end item-hl">Flex Item</div>
+  <div class="p-4 align-self-baseline item-hl">Flex Item</div>
+  <div class="p-4 align-self-stretch item-hl">Flex Item</div>
+</div>
+
+<br><br>
+
+<!-- RESPONSIVE ALIGN SELF -->
+<div class="d-flex flew-row row-hl">
+  <div class="p-4 align-self-md-start item-hl">Flex Item</div>
+  <div class="p-4 align-self-md-center item-hl">Flex Item</div>
+  <div class="p-4 align-self-md-end item-hl">Flex Item</div>
+  <div class="p-4 align-self-md-baseline item-hl">Flex Item</div>
+  <div class="p-4 align-self-md-stretch item-hl">Flex Item</div>
+</div>
+```
