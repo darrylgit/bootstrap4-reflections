@@ -95,3 +95,128 @@
   </div>
 </div>
 ```
+
+### _26. Grid Alignment_
+```html
+<!-- VERTICAL ALIGNMENT -->
+<div class="container">
+    <div class="row align-items-start" style="height:200px;border:1px #333 solid">
+        <div class="col">
+            Top Aligned Text (default)
+        </div>
+        <div class="col">
+            Top Aligned Text (default)
+        </div>
+        <div class="col">
+            Top Aligned Text (default)
+        </div>
+    </div>
+    <div class="row align-items-center" style="height:200px;border:1px #333 solid">
+        <div class="col">
+            Middle Aligned Text
+        </div>
+        <div class="col">
+            Middle Aligned Text
+        </div>
+        <div class="col">
+            Middle Aligned Text
+        </div>
+    </div>
+    <div class="row align-items-end" style="height:200px;border:1px #333 solid">
+        <div class="col">
+            Bottom Aligned Text
+        </div>
+        <div class="col">
+            Bottom Aligned Text
+        </div>
+        <div class="col">
+            Bottom Aligned Text
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<!-- VERTICAL ALIGN INDIVIDUAL COLS -->
+<div class="container">
+    <div class="row" style="height:200px;border:1px #333 solid">
+        <div class="col align-self-start">
+            Top Aligned (default)
+        </div>
+        <div class="col align-self-center">
+            Middle Aligned
+        </div>
+        <div class="col align-self-end">
+            Bottom Aligned
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<!-- HORIZONTAL ALIGNED COLS -->
+<div class="container">
+    <div class="row justify-content-start" style="height:200px;border:1px #333 solid">
+        <div class="col-4">
+            Left Aligned Text (default)
+        </div>
+        <div class="col-4">
+            Left Aligned Text (default)
+        </div>
+    </div>
+    <div class="row justify-content-center" style="height:200px;border:1px #333 solid">
+        <div class="col-4">
+            Center Aligned Text
+        </div>
+        <div class="col-4">
+            Center Aligned Text
+        </div>
+    </div>
+    <div class="row justify-content-end" style="height:200px;border:1px #333 solid">
+        <div class="col-4">
+            Right Aligned Text
+        </div>
+        <div class="col-4">
+            Right Aligned Text
+        </div>
+    </div>
+    <div class="row justify-content-around" style="height:200px;border:1px #333 solid">
+        <div class="col-4">
+            Content Around
+        </div>
+        <div class="col-4">
+            Content Around
+        </div>
+    </div>
+    <div class="row justify-content-between" style="height:200px;border:1px #333 solid">
+        <div class="col-4">
+            Content Between
+        </div>
+        <div class="col-4">
+            Content Between
+        </div>
+    </div>
+</div>
+```
+
+_Column wrapping_: if the sum of the column values is greater than 12, they automatically wrap
+_no-gutters_: gets rid of the space between columns
+```html
+<div class="row no-gutters">
+    <div class="col-9">
+      <div class="card">
+        <div class="card-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae!</p></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae!</p></div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-bodys"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, repudiandae!</p></div>
+      </div>
+    </div>
+</div>
+</div>
