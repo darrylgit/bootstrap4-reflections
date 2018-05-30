@@ -42,6 +42,7 @@ Note: JQuery and Popper.js are required for this section.
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
+    
     <!-- SLIDER WITH INDICATORS -->
     <div id="slider3" class="carousel slide mb-5" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -67,6 +68,7 @@ Note: JQuery and Popper.js are required for this section.
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
+
     <!-- SLIDER WITH CAPTIONS -->
     <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
       <ol class="carousel-indicators">
