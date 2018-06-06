@@ -291,7 +291,7 @@ Basic Popover:
   data-placement="right"
 ></button>
 ```
-_Note: as with tooltips, we must initialize with JQuery_
+_Note:_ as with tooltips, we must initialize with JQuery.
 ```javascript
 $('[data-toggle="popover"]').popover();
 ```
@@ -319,11 +319,12 @@ Control with JS:
 
 <button class="btn btn-secondary"
 onclick="showPopover()">Show Popover</button>
+
 <button class="btn btn-secondary"
 onclick="hidePopover()">Hide Popover</button>
+
 <button class="btn btn-secondary"
 onclick="togglePopover()">Toggle Popover</button>
-</div>
 ```
 ```javascript
 function showPopover(){
@@ -355,4 +356,72 @@ $('#myPopover').on('hide.bs.popover', function(){
 $('#myPopover').on('hidden.bs.popover', function(){
   console.log('Popover Hidden!')
 })
+```
+
+### _34. Modals_
+Basic Modal:
+```html
+<!-- MODAL TRIGGER -->
+<button class="btn btn-primary" data-toggle="modal"
+data-target="#myModal">Launch Modal</button>
+
+<!-- MODAL -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal Title</h5>
+        <button class="close"
+        data-dismiss="modal" >&times;</button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde veniam harum magnam molestias dignissimos omnis architecto, quod, obcaecati dolorum debitis dolore porro qui, iusto quo accusantium voluptates pariatur illo.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+        data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+With a (login) form:
+```html
+<!-- LOGIN MODAL TRIGGER -->
+<button class="btn btn-info" data-toggle="modal"
+data-target="#loginModal">Launch Modal</button>
+
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button class="close"
+        data-dismiss="modal" >&times;</button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Username"
+            class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password"
+            class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+        data-dismiss="modal">Close</button>
+        <button class="btn btn-primary"
+        data-dismiss="modal">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
 ```
