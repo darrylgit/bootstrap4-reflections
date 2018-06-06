@@ -269,3 +269,90 @@ $('#hello').on('hidden.bs.tooltip', function(){
   console.log("tooltip hidden!");
 })
 ```
+
+### _33. Popovers_  
+
+Basic Popover:
+```html
+<button
+  class="btn btn-danger"
+  data-toggle="popover"
+  data-placement="top"
+  title="Popover Title"
+  data-content="quid nulla fore elit dolor quis malis export"
+>
+  Toggle popover
+</button>
+
+<!--Other placements-->
+<button
+  data-placement="bottom"
+  data-placement="left"
+  data-placement="right"
+></button>
+```
+_Note: as with tooltips, we must initialize with JQuery_
+```javascript
+$('[data-toggle="popover"]').popover();
+```
+
+For dismissable popovers, just add the class:
+```html
+<button
+  data-trigger="focus"
+  & all your other popover attributes
+></button>
+```
+
+Control with JS:
+```html
+<button
+  id="myPopover"
+  class="btn btn-info"
+  data-toggle="popover"
+  data-placement="top"
+  title="Popover Title"
+  data-content="quem ipsum esse quis velit enim nisi esse"
+>
+  Target
+</button>
+
+<button class="btn btn-secondary"
+onclick="showPopover()">Show Popover</button>
+<button class="btn btn-secondary"
+onclick="hidePopover()">Hide Popover</button>
+<button class="btn btn-secondary"
+onclick="togglePopover()">Toggle Popover</button>
+</div>
+```
+```javascript
+function showPopover(){
+  $('#myPopover').popover('show');
+}
+
+function hidePopover(){
+  $('#myPopover').popover('hide');
+}
+
+function togglePopover(){
+  $('#myPopover').popover('toggle');
+}
+```
+Popover events:
+```javascript
+$('#myPopover').on('show.bs.popover', function(){
+  console.log('Popover Show!')
+})
+
+$('#myPopover').on('shown.bs.popover', function(){
+  console.log('Popover Shown!')
+})
+
+$('#myPopover').on('hide.bs.popover', function(){
+  console.log('Popover Hide!')
+})
+
+$('#myPopover').on('hidden.bs.popover', function(){
+  console.log('Popover Hidden!')
+})
+```
