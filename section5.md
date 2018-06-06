@@ -193,3 +193,79 @@ Accordion menu:
   </div>
 </div>
 ```
+
+### _32. Tooltips_
+Basic tooltips:
+```html
+<button class="btn btn-primary" data-toggle="tooltip"
+data-placement="top" title="a tooltip">Tooltip On Top</button>
+<button class="btn btn-success" data-toggle="tooltip"
+data-placement="right" title="another tooltip">Tooltip On Right</button>
+<button class="btn btn-warning" data-toggle="tooltip"
+data-placement="bottom" title="yet another">Tooltip On Bottom</button>
+<button class="btn btn-danger" data-toggle="tooltip"
+data-placement="left" title="magic with a kick">Tooltip On Left</button>
+```
+_Note: These won't work unless you initialize them with JQuery:_
+```javascript
+//Init tooltips
+$('[data-toggle="tooltip"]').tooltip();
+```
+
+Tooltip with HTML:
+```html
+<button class="btn btn-primary" data-toggle="tooltip"
+ data-placement="top" data-html="true" id="hello"
+ title="<h3>Hello world</h3><p>quae legam quorum veniam malis</p>">Tooltip With HTML</button>
+```
+
+Trigger with JS:
+```html
+<button class="btn btn-primary" data-toggle="tooltip"
+ data-placement="top"  id="hello"
+ title="Tooltip text">Target</button>
+
+ <button class="btn btn-secondary" onclick="showTooltip()">
+   Show Tooltip
+ </button>
+
+ <button class="btn btn-secondary" onclick="hideTooltip()">
+   Hide Tooltip
+ </button>
+
+ <button class="btn btn-secondary" onclick="toggleTooltip()">
+   Toggle Tooltip
+ </button>
+```
+```javascript
+function showTooltip(){
+  $('#hello').tooltip('show');
+}
+
+function hideTooltip(){
+  $('#hello').tooltip('hide');
+}
+
+function toggleTooltip(){
+  $('#hello').tooltip('toggle');
+}
+```
+
+Tooltip events:
+```javascript
+$('#hello').on('show.bs.tooltip', function(){
+  console.log("tooltip show!");
+})
+
+$('#hello').on('shown.bs.tooltip', function(){
+  console.log("tooltip shown!");
+})
+
+$('#hello').on('hide.bs.tooltip', function(){
+  console.log("tooltip hide!");
+})
+
+$('#hello').on('hidden.bs.tooltip', function(){
+  console.log("tooltip hidden!");
+})
+```
