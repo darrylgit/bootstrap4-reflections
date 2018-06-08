@@ -2,7 +2,7 @@
 
 Note: JQuery and Popper.js are required for this section.
 
-### _30. Carousel Slider_
+### _31. Carousel Slider_
 ```html
 <div class="row">
   <div class="col-sm-8 m-auto">
@@ -128,7 +128,7 @@ $('#slider4').on('slid.bs.carousel', function() {
 })
 ```
 
-### _31. Collapse and Accordion_
+### _32. Collapse and Accordion_
 
 Button with collapse:
 ```html
@@ -194,7 +194,7 @@ Accordion menu:
 </div>
 ```
 
-### _32. Tooltips_
+### _33. Tooltips_
 Basic tooltips:
 ```html
 <button class="btn btn-primary" data-toggle="tooltip"
@@ -270,7 +270,7 @@ $('#hello').on('hidden.bs.tooltip', function(){
 })
 ```
 
-### _33. Popovers_  
+### _34. Popovers_  
 
 Basic Popover:
 ```html
@@ -358,7 +358,7 @@ $('#myPopover').on('hidden.bs.popover', function(){
 })
 ```
 
-### _34. Modals_
+### _35. Modals_
 Basic Modal:
 ```html
 <!-- MODAL TRIGGER -->
@@ -424,4 +424,63 @@ data-target="#loginModal">Launch Modal</button>
     </div>
   </div>
 </div>
+```
+
+### _36. ScrollSpy & Smooth Scrolling_
+_Note:_ minified JQuery does not have the Animate method. Use the full version of JQuery.
+```html
+<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light mb-3" id="main-nav">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#welcome">Welcome</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li class="nav-item">
+    </ul>
+  </div>
+</nav>
+
+<section id="welcome">
+  <h3>Welcome</h3>
+  <p>Lots of content</p>
+</section>
+
+<section id="about">
+  <h3>About</h3>
+  <p>Lots of content</p>
+</section>
+
+<section id="services">
+  <h3>Services</h3>
+  <p>Lots of content</p>
+</section>
+```
+```javascript
+$('body').scrollspy({ target: '#main-nav' });
+
+// Add smooth scrolling
+$('#main-nav a').on('click', function(e) {
+  //Check for a hash value
+  if(this.hash !== ''){
+    //Prevent default behavior
+    e.preventDefault();
+
+    //Store hash
+    const hash = this.hash;
+
+    //Animate smooth scroll
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function() {
+      //Add hash to URL after scroll
+      window.location.hash = hash;
+    });
+  }
+});
 ```
