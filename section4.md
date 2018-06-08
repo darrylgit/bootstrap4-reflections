@@ -1,6 +1,6 @@
 ## Section 4 Reflections
 
-### _25. Grid System_
+### _26. Grid System_
 ```html
 <!-- RESPONSIVE GRID -->
 <div class="row">
@@ -96,7 +96,7 @@
 </div>
 ```
 
-### _26. Grid Alignment_
+### _27. Grid Alignment_
 ```html
 <!-- VERTICAL ALIGNMENT -->
 <div class="container">
@@ -221,7 +221,7 @@ _no-gutters_: gets rid of the space between columns
 </div>
 ```
 
-### _27. Flexbox_
+### _28. Flexbox_
 ```html
 <!-- FLEX ROW & FLEX ITEMS -->
 <div class="d-flex flex-row">
@@ -370,7 +370,7 @@ _no-gutters_: gets rid of the space between columns
 </div>
 ```
 
-### _28. Auto Margin, Wrap, and Ordering_
+### _29. Auto Margin, Wrap, and Ordering_
 ```html
 <!-- MR-AUTO (last two items get pushed to right) -->
 <div class="d-flex row-hl">
