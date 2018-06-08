@@ -1125,3 +1125,26 @@ Pagination:
     </li>
 </ul>
 ```
+
+### _24. Jumbotron_
+```html
+<div class="jumbotron text-center">
+  <h1 class="display-4">Welcome To My Website!</h1>
+  <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus perspiciatis cum vitae, modi hic?</p>
+  <hr>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quibusdam.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Read More</a>
+</div>
+```
+
+Fluid jumbotron (the jumbotron, though not necessarily the content, stretches all the way across the screen):
+```html
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Fluid Jumbotron</h1>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas recusandae voluptatibus, natus architecto asperiores
+      a.
+    </p>
+  </div>
+</div>
+```
